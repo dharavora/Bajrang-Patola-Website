@@ -1,0 +1,368 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", serif;
+}
+.hero-section{
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+}
+.page-1 {
+    flex: 0 0 100%;
+    scroll-snap-align: start;
+    transition: transform 0.3s ease-in-out;
+    background-color: pink;
+    display: flex;
+    justify-content: space-between;
+}
+.page-1 .sub-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 50px;
+    margin-top: 70px;
+}
+.page-1 .title h1{
+    display: flex;
+    gap: 10px;
+    font-size: 50px;
+    font-weight: 600;
+    margin-top: 10px;
+    /* color: #ff004f; */
+    /* color: red; */
+}
+.page-1 .title span {
+    /* color: #ff004f; */
+    color: brown;
+}
+.page-1 .images {
+    display: flex;
+    gap: 20px;
+}
+.page-1 .img-2 {
+    height: 590px;
+}
+.page-1 .img-1 {
+    height: 400px;
+    width: 300px;
+    margin-top: 150px;
+    background-position: bottom;
+}
+.hero-section::-webkit-scrollbar {
+    display: none;
+}
+
+ /*  items  */
+.collection {
+    padding-top: 40px;
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    padding-left: 40px;
+    overflow-x: auto;
+    overflow-x: scroll;
+}
+.collection .items {
+    text-decoration: none;
+    color: black;
+    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    cursor: pointer;
+}
+
+main .collection .img1 {
+    background-color: var(--bg-primary-color);
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin-left: 30px;
+}
+
+/* page-2 */
+.special-collection {
+    padding-top: 30px;
+}
+
+.special-collection .heading {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.special-collection .heading hr {
+    background-color: black;
+    height: 3px;
+    width: 450px;
+    margin-top: 3%;
+}
+
+.special-collection .heading p {
+    font-size: 25px;
+    margin-top: 28px;
+    font-weight: 600;
+    color: brown;
+} 
+
+.special-collection .category {
+    padding: 120px 60px 60px 60px;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 30px;
+    flex-wrap: wrap;
+    overflow: auto;
+    align-items: center;
+    row-gap: 120px;
+}
+
+.special-collection .category .card1 {
+    height: 260px;
+    width: 350px;
+    border-radius: 12px;
+    background-color: rgba(128, 128, 128, 0.185);
+    position: relative;
+}
+.special-collection .category .image {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+.special-collection .category .card1 .caption {
+    position: absolute;
+    z-index: 2;
+    bottom: 0px;
+    width: 100%;
+    background-color: wheat;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 0 0 12px 12px;
+    background-color: rgba(165, 42, 42, 0.747);
+}
+.special-collection .category .card1 .caption p {
+    margin-bottom: 0;
+    padding: 8px 10px;
+    color: white;
+}
+.special-collection .category img {
+    height: 250px;
+    width: 300px;
+    border-radius: 12px;
+    object-fit: cover;
+    position: absolute;
+    top: -60px;
+}
+.special-collection .image {
+    transition: all 300ms;
+}
+.special-collection .card1:hover img {
+    transform: translateY(-20px);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+}
+
+/*  page-3  */
+.featured-product-section .heading hr {
+    background-color: black;
+    height: 3px;
+    width: 450px;
+    margin-top: 3%;
+}
+.featured-product-section .heading {
+    display: flex;
+    justify-content: space-evenly;
+}
+.featured-product-section .heading p {
+    font-size: 25px;
+    margin-top: 28px;
+    font-weight: 600;
+    color: brown;
+}
+.featured-product-section .cards {
+    padding: 30px 60px 40px 60px; 
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 30px;
+    overflow: auto;
+    align-items: center;
+}
+.featured-product-section .cards .card {
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+    height: 430px;
+    width: 280px;
+    border: 1px solid whitesmoke;
+    overflow: hidden;
+}
+.card .chip {
+    overflow: hidden;
+    position: relative;
+}
+.cards .card ,img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: all 400ms;
+}
+.card .chip .options {
+    position: absolute;
+    top: 10px ;
+    right: -100px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    transition: all 400ms;
+}
+.card:hover .options{
+    right: 10px;
+} 
+.card:hover img {
+    transform: scale(1.2);
+}
+.chip .add-to-cart {
+    width: 100%;
+    padding: 10px;
+    background-color: rgba(245, 245, 245, 0.63);
+    color: black;
+    font-weight: 700;
+    text-align: center;
+    position: absolute;
+    bottom: -200px;
+    left: 0;
+    transition: all 400ms;
+}
+.card:hover .add-to-cart {
+    bottom: 0px;
+}
+.card .options .cart-btn,.info-btn {
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 600;
+    transition: all 400ms;
+} 
+.card:hover .cart-btn,.info-btn {
+    right: 5px;
+}
+.add-to-cart:hover {
+    color: white; 
+    background-color: rgba(0, 0, 0, 0.658);
+}
+
+/*  page-4  */
+.heading hr {
+    background-color: black;
+    height: 3px;
+    width: 400px; 
+    margin-top: 3%;
+}
+.heading {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 30px;
+    font-weight: 600;
+}
+.heading p {
+    font-size: 25px;
+    margin-top: 25px;
+    font-weight: 600;
+    color: brown;
+}
+.bajrand-featured .images {
+    padding: 30px 80px;
+    display: flex;
+    /* justify-content: space-evenly; */
+    gap: 40px;
+    overflow-x: auto;
+    /* overflow-x: scroll; */
+}
+.bajrand-featured .img {
+    width: 350px;
+    overflow: hidden;
+}
+.img-1 {
+    padding-bottom: 50px;
+}
+.bajrand-featured .img-1 p{
+    margin-top: 20px;
+    text-align: center;
+    font-size: 22px;
+    font-weight: 600;
+}
+.bajrand-featured .img:hover  {
+    transform: scale(1.1);
+}
+
+/*  page-5  */
+.testimonials hr {
+    width: 430px;
+}
+.ratings {
+    display: flex;
+    gap: 50px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    padding: 20px;
+    padding-bottom: 50px;
+}
+.rating {
+    padding: 0 50px 0 30px; 
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    scroll-snap-align: start;
+    transition: transform 0.3s ease-in-out;
+}
+.rating p{
+    text-align: center;
+    width: 1200px;
+    padding-left: 70px;
+}
+.rating h5 {
+    text-align: center;
+    color: brown;
+    font-weight: 600;
+}
+.ratings::-webkit-scrollbar {
+    display: none;
+}
+
+/*  footer  */
+.footer {
+    padding: 20px;
+    background-color: lightgray;
+    color: brown;
+}
+.parts {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.footer h4{
+    color: rgba(255, 68, 0, 0.644);
+}
+.part-1 h4 {
+    margin-bottom: 20px;
+}
+.part-2 {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.part-3 .icons {
+    display: flex;
+    gap: 15px;
+    font-size: 28px;
+    margin-top: 20px;
+    cursor: pointer;
+}

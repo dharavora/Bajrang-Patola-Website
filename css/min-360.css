@@ -1,0 +1,69 @@
+@media (min-width: 360px) {
+    .page-1 .img-2 {
+        display: none;
+    }
+    .page-1 .sub-title {
+        margin-left: 10px;
+        margin-top: 20px;
+    }
+    .page-1 .sub-title h2 {
+        font-size: 18px;
+    }
+    .page-1 .sub-title h1 {
+        font-size: 25px;
+        display: block;
+        text-align: center;
+    }
+    .page-1 .img-1 {
+        width: 150px;
+        object-fit: cover;
+        margin-top: 30px;
+    }
+    .collection {
+        padding: 30px 50px;
+    }
+    .special-collection .heading hr {
+        width: 14%;
+        margin-top: 30px;
+    }
+    .special-collection .category {
+        padding: 100px 20px 60px 20px;
+    }
+    .special-collection .heading p {
+        margin-top: 10px;
+    }
+    .special-collection .category .card1 {
+        width: 300px;
+    }
+    .special-collection .category img {
+        width: 250px;
+    }
+    .featured-product-section .heading hr {
+        width: 30px;
+    }
+    .featured-product-section .heading p {
+        margin-top: 0px;
+    }
+    .bajrand-featured .heading hr {
+        width: 10px;
+    }
+    .bajrand-featured .heading p {
+        font-size: 20px;
+        margin-top: 0;
+    }
+    .bajrand-featured .img {
+        width: 300px;
+    }
+    .testimonials hr {
+        margin-top: 40px;
+    }
+    .rating {
+        padding: 0;
+        margin: 0;
+    }
+    .rating p {
+        width: 300px;
+        padding-left: 10px;
+        margin-bottom: 10px;
+    }
+}

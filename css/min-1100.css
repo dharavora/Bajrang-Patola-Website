@@ -1,0 +1,31 @@
+@media (min-width:1100px) {
+    .page-1 .img-2 {
+        display: inline-block;
+        width: 400px;
+    }
+    .page-1 .img-1 {
+        width: 300px;
+        margin-top: 120px;
+    }
+    .page-1 .sub-title h2 {
+        font-size: 30px;
+    }
+    .page-1 .sub-title h1 {
+        font-size: 40px;
+    }
+    .special-collection .category .card1 {
+        width: 350px;
+    }
+    .special-collection .category img {
+        width: 300px;
+    }
+    .bajrand-featured .heading p {
+        margin-top: 15px;
+    }
+    .bajrand-featured .img {
+        width: 350px;
+    }
+    .rating p {
+        width: 1200px;
+    }
+}

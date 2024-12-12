@@ -1,0 +1,38 @@
+@media (min-width:576px) {
+    .page-1 .img-1 {
+        width: 200px;
+    }
+    .page-1 .sub-title {
+        text-align: center;
+        margin-left: 30px;
+    }
+    .page-1 .sub-title h2 {
+        font-size: 22px;
+    }
+    .page-1 .sub-title h1 {
+        font-size: 30px;
+    }
+    .special-collection .heading hr {
+        width: 25%;
+        margin-top: 30px;
+    }
+    .special-collection .category .card1 {
+        width: 420px;
+    }
+    .special-collection .category img {
+        width: 350px;
+    }
+    .featured-product-section .heading hr {
+        width: 25%;
+    }
+    .bajrand-featured .heading hr {
+        width: 15%;
+    }
+    .bajrand-featured .heading p {
+        font-size: 25px;
+    }
+    .rating p {
+        width: 500px;
+        margin-bottom: 10px;
+    }
+}

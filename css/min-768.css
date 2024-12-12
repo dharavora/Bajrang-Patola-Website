@@ -1,0 +1,30 @@
+@media (min-width:768px) {
+    .page-1 .img-1 {
+        width: 300px;
+    }
+    .page-1 .sub-title {
+        text-align: center;
+        margin-left: 50px;
+    }
+    .page-1 .sub-title h2 {
+        font-size: 22px;
+    }
+    .page-1 .sub-title h1 {
+        font-size: 30px;
+    }
+    .special-collection .heading hr {
+        width: 30%;
+    }
+    .featured-product-section .heading hr {
+        width: 30%;
+    }
+    .bajrand-featured .heading hr {
+        width: 25%;
+    }
+    .bajrand-featured .heading p {
+        margin-top: 8px;
+    }
+    .rating p {
+        width: 700px;
+    }
+}

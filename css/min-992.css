@@ -1,0 +1,21 @@
+@media (min-width:992px) {
+    .page-1 .img-1 {
+        width: 450px;
+    }
+    .page-1 .sub-title {
+        text-align: center;
+        margin-left: 50px;
+    }
+    .page-1 .sub-title h2 {
+        font-size: 25px;
+    }
+    .page-1 .sub-title h1 {
+        font-size: 35px;
+    }
+    .featured-product-section .heading p {
+        margin-top: 10px;
+    }
+    .rating p {
+        width: 900px;
+    }
+}
